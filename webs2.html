@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elijah Bernard Mlemeta - Futuristic Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0,0,0,0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-links {display: flex; gap: 15px;}
+.nav-links a {font-weight: 600; color: #fff; transition: 0.3s;}
+.nav-links a:hover {color: #00ffff;}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: radial-gradient(circle at center, #302b63, #0f0c29);
+  padding: 0 20px;
+}
+.hero img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00ffff;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-15px);}
+}
+.hero h1 {font-size: 2.5rem; margin: 10px 0; color:#00ffff;}
+.hero p {font-size: 1.2rem; margin-bottom: 20px; color:#fff;}
+.hero a.button {background: #00ffff; color: #0f0c29; padding: 12px 30px; border-radius: 30px; font-weight: 600; transition: 0.3s;}
+.hero a.button:hover {background: #0ff; color:#000;}
+section {padding: 60px 20px; max-width: 1000px; margin: auto;}
+section h2 {text-align: center; margin-bottom: 40px; font-size: 2rem; color:#00ffff;}
+.about, .skills, .projects, .blog, .testimonials, .contact {background: rgba(0,0,0,0.7); border-radius: 15px; padding: 25px; margin-bottom: 30px;}
+.skills .skill {margin-bottom: 15px;}
+.skills .skill span {display: inline-block; font-weight: 600; margin-bottom: 5px;}
+.skills .skill-bar {width: 100%; background: #333; border-radius: 20px; overflow: hidden;}
+.skills .skill-bar div {height: 12px; background: #00ffff; width: 0; border-radius: 20px; transition: width 1.5s ease;}
+.projects .project-cards, .blog .blog-cards, .testimonials .testimonial-cards {display: flex; flex-direction: column; gap: 20px;}
+.projects .project, .blog .blog-post, .testimonials .testimonial {padding: 15px; background: #111; border-radius: 15px; transition: transform 0.3s;}
+.projects .project:hover, .blog .blog-post:hover, .testimonials .testimonial:hover {transform: scale(1.03);}
+.contact form {display: flex; flex-direction: column; gap: 15px;}
+.contact input, .contact textarea {padding: 10px; border-radius: 10px; border: 1px solid #ccc; width: 100%; font-family: 'Poppins', sans-serif;}
+.contact button {padding: 10px; background: #00ffff; color: #0f0c29; border: none; border-radius: 25px; font-weight: 600; cursor: pointer; transition: 0.3s;}
+.contact button:hover {background: #0ff;}
+.social-icons {display: flex; justify-content: center; gap: 20px; margin-top: 15px;}
+.social-icons a {color: #00ffff; font-size: 1.5rem; transition: 0.3s;}
+.social-icons a:hover {color: #fff;}
+footer {text-align: center; padding: 20px; background: #111; color:#00ffff;}
+@media(min-width:768px){.projects .project-cards, .blog .blog-cards, .testimonials .testimonial-cards {flex-direction: row; flex-wrap: wrap;}.projects .project, .blog .blog-post, .testimonials .testimonial {flex: 1 1 calc(33% - 20px);}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Elijah B. Mlemeta</div>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="https://img.sanishtech.com/u/a65a36b9941910eb10b9f28cf51b9a0f.jpeg" alt="Elijah Bernard Mlemeta">
+  <h1>Elijah Bernard Mlemeta</h1>
+  <p>Student & Forex Enthusiast</p>
+  <a href="#contact" class="button">Get in Touch</a>
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Elijah Bernard Mlemeta, a student about to complete Form Six and a passionate Forex trader. I love exploring financial markets, analyzing trends, and improving my trading skills. This futuristic website showcases my journey, achievements, projects, blog, and testimonials.</p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skill"><span>Forex Trading</span><div class="skill-bar"><div style="width:90%"></div></div></div>
+  <div class="skill"><span>Market Analysis</span><div class="skill-bar"><div style="width:85%"></div></div></div>
+  <div class="skill"><span>Technical Indicators</span><div class="skill-bar"><div style="width:80%"></div></div></div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Portfolio</h2>
+  <div class="project-cards">
+    <div class="project"><h3>Forex Analysis 1</h3><p>Detailed currency trend analysis and trading strategies.</p></div>
+    <div class="project"><h3>Forex Analysis 2</h3><p>Risk management techniques and trade logs.</p></div>
+    <div class="project"><h3>Forex Analysis 3</h3><p>Technical indicator application and strategy results.</p></div>
+  </div>
+</section>
+
+<section id="blog" class="blog">
+  <h2>Blog / Thoughts</h2>
+  <div class="blog-cards">
+    <div class="blog-post"><h3>Trading Insights</h3><iframe width="100%" height="200" src="https://www.youtube.com/embed/vGs4LIDUB_c" frameborder="0" allowfullscreen></iframe><p>Short tips and insights into Forex trading strategies.</p></div>
+    <div class="blog-post"><h3>Market Trends</h3><p>Understanding daily market movements and making better trades.</p></div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial"><p>"Elijah’s trading skills are incredible and inspiring!"</p><span>- Forex Mentor</span></div>
+    <div class="testimonial"><p>"A student with a futuristic vision and real skills in Forex trading."</p><span>- Classmate</span></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-icons">
+    <a href="https://www.youtube.com/channel/UCpEowYdpYH0LtrX94SPUHXA" target="_blank">YouTube</a>
+    <a href="https://www.instagram.com/aura.editz05?igsh=aXVjaGhmdDB3NTVt&utm_source=qr" target="_blank">Instagram</a>
+    <a href="https://wa.me/0784452159" target="_blank">WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Elijah Bernard Mlemeta | Follow me on social media!</p>
+</footer>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+(function(){ emailjs.init('YOUR_PUBLIC_KEY'); })();
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  emailjs.sendForm('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',this)
+  .then(function(){ alert('Message sent successfully!'); },
+        function(error){ alert('Failed to send message: '+JSON.stringify(error)); });
+});
+window.addEventListener('load', () => { document.querySelectorAll('.skill-bar div').forEach(bar => { bar.style.width = bar.style.width; }); });
+</script>
+
+</body>
+</html>
